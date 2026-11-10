@@ -1,0 +1,89 @@
+
+{
+  "dataRoles": [
+    {
+      "name": "profit",
+      "kind": "Measure",
+      "displayName": "Profit"
+    },
+    {
+      "name": "segment",
+      "kind": "Grouping",
+      "displayName": "Segment"
+    },
+    {
+      "name": "country",
+      "kind": "Grouping",
+      "displayName": "Country"
+    },
+    {
+      "name": "product",
+      "kind": "Grouping",
+      "displayName": "Product"
+    },
+    {
+      "name": "year",
+      "kind": "Grouping",
+      "displayName": "Year"
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "profit": {
+            "max": 1
+          },
+          "segment": {
+            "max": 1
+          },
+          "country": {
+            "max": 1
+          },
+          "product": {
+            "max": 1
+          },
+          "year": {
+            "max": 1
+          }
+        }
+      ],
+      "categorical": {
+        "categories": {
+          "select": [
+            {
+              "bind": {
+                "to": "segment"
+              }
+            },
+            {
+              "bind": {
+                "to": "country"
+              }
+            },
+            {
+              "bind": {
+                "to": "product"
+              }
+            },
+            {
+              "bind": {
+                "to": "year"
+              }
+            }
+          ]
+        },
+        "values": {
+          "select": [
+            {
+              "bind": {
+                "to": "profit"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "privileges": []
+}

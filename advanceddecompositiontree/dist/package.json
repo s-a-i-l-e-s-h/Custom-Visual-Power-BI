@@ -1,0 +1,17 @@
+{
+		"version": "1.0.0.0",
+		"author": {"name":"Sailesh","email":"talkwithsailesh@zohomail.in"},
+		"resources": [
+			{
+				"resourceId": "rId0",
+				"sourceType": 5,
+				"file": "resources/advancedKpiCardF836BCC550E64E29AF0DCAB84BCD72D1.pbiviz.json"
+			}
+		],
+		"visual": {"name":"advancedKpiCard","displayName":"Advanced KPI Card","guid":"advancedKpiCardF836BCC550E64E29AF0DCAB84BCD72D1","visualClassName":"Visual","version":"1.0.0.0","description":"Advanced KPI Card with Actual, Target, Achievement and Growth indicators","supportUrl":"https://github.com/","gitHubUrl":""},
+		"metadata": {
+			"pbivizjson": {
+				"resourceId": "rId0"
+			}
+		}
+	}

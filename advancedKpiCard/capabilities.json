@@ -1,0 +1,59 @@
+
+{
+    "dataRoles": [
+        {
+            "name": "actual",
+            "kind": "Measure",
+            "displayName": "Actual Value"
+        },
+        {
+            "name": "target",
+            "kind": "Measure",
+            "displayName": "Target Value"
+        },
+        {
+            "name": "growth",
+            "kind": "Measure",
+            "displayName": "Growth Percentage"
+        }
+    ],
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "actual": {
+                        "max": 1
+                    },
+                    "target": {
+                        "max": 1
+                    },
+                    "growth": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "actual"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "target"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "growth"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "privileges": []
+}

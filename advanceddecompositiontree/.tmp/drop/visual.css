@@ -1,0 +1,167 @@
+.decomposition-visual {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  max-height: 100%;
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+  background: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+}
+.decomposition-content {
+  display: block;
+  width: max-content;
+  min-width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+.tree-main-heading {
+  padding: 18px 20px 10px;
+  font-family: "Segoe UI", sans-serif;
+}
+.tree-main-heading h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #242424;
+}
+.tree-main-heading p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #777777;
+}
+.tree-branches {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 10px 20px 30px;
+  box-sizing: border-box;
+}
+.tree-branch {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+.profit-branch {
+  border-left: 5px solid #16a34a;
+}
+.loss-branch {
+  border-left: 5px solid #dc2626;
+}
+.branch-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.branch-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.branch-summary h2 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 800;
+}
+.profit-branch .branch-summary h2 {
+  color: #15803d;
+}
+.loss-branch .branch-summary h2 {
+  color: #dc2626;
+}
+.branch-summary span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555555;
+}
+.branch-expand-button {
+  padding: 8px 13px;
+  border: none;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.profit-branch .branch-expand-button {
+  color: #166534;
+  background: #dcfce7;
+}
+.loss-branch .branch-expand-button {
+  color: #991b1b;
+  background: #fee2e2;
+}
+.tree-scroll-area {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 8px 0 12px;
+  box-sizing: border-box;
+}
+.tree-scroll-area svg {
+  display: block;
+  max-width: none;
+  overflow: visible;
+}
+.decomposition-node rect {
+  transition: fill 0.2s ease, stroke-width 0.2s ease;
+}
+.decomposition-node:hover rect {
+  stroke-width: 3;
+}
+.node-label {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  fill: #242424;
+}
+.node-value {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  fill: #666666;
+}
+.node-toggle {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  fill: #242424;
+  pointer-events: none;
+}
+.tree-empty {
+  padding: 18px;
+  color: #777777;
+  font-size: 13px;
+  font-family: "Segoe UI", sans-serif;
+}
+.decomposition-visual::-webkit-scrollbar,
+.tree-scroll-area::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.decomposition-visual::-webkit-scrollbar-track,
+.tree-scroll-area::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+.decomposition-visual::-webkit-scrollbar-thumb,
+.tree-scroll-area::-webkit-scrollbar-thumb {
+  background: #a3a3a3;
+  border-radius: 8px;
+}
+.decomposition-visual::-webkit-scrollbar-thumb:hover,
+.tree-scroll-area::-webkit-scrollbar-thumb:hover {
+  background: #737373;
+}
+

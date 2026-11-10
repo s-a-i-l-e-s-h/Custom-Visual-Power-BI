@@ -1,0 +1,127 @@
+.kpi-container {
+  width: 100%;
+  height: 100%;
+  min-width: 180px;
+  min-height: 160px;
+  box-sizing: border-box;
+  padding: 22px;
+  font-family: "Segoe UI", sans-serif;
+  background: #fff;
+  color: #242424;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.kpi-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.kpi-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.kpi-status {
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.on-track {
+  color: #15803d;
+}
+.at-risk {
+  color: #b45309;
+}
+.off-track {
+  color: #dc2626;
+}
+.kpi-status.on-track {
+  background: #dcfce7;
+}
+.kpi-status.at-risk {
+  background: #fef3c7;
+}
+.kpi-status.off-track {
+  background: #fee2e2;
+}
+.kpi-main {
+  margin-top: 16px;
+}
+.kpi-value {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+.kpi-subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+  margin-top: 5px;
+}
+.kpi-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 22px;
+}
+.kpi-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+.kpi-detail span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #777;
+}
+.kpi-detail strong {
+  font-size: 16px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.growth-value {
+  color: #15803d;
+}
+.progress-track {
+  width: 100%;
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 22px;
+}
+.progress-fill {
+  height: 100%;
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+.progress-fill.on-track {
+  background: #16a34a;
+}
+.progress-fill.at-risk {
+  background: #f59e0b;
+}
+.progress-fill.off-track {
+  background: #dc2626;
+}
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
+  color: #777;
+  margin-top: 7px;
+}
+.kpi-empty {
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  color: #777;
+  font-size: 16px;
+}
+

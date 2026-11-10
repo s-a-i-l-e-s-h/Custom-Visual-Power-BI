@@ -1,0 +1,27 @@
+
+{
+    "visual": {
+        "name": "advancedKpiCard",
+        "displayName": "Advanced KPI Card",
+        "guid": "advancedKpiCardF836BCC550E64E29AF0DCAB84BCD72D1",
+        "visualClassName": "Visual",
+        "version": "1.0.0.0",
+        "description": "Advanced KPI Card with Actual, Target, Achievement and Growth indicators",
+        "supportUrl": "https://github.com/",
+        "gitHubUrl": ""
+    },
+    "apiVersion": "5.11.1",
+    "author": {
+        "name": "Sailesh",
+        "email": "talkwithsailesh@zohomail.in"
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "externalJS": null,
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": [],
+    "version": "1.0.0.0"
+}
